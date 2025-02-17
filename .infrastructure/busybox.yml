@@ -7,4 +7,4 @@ spec:
   containers:
     - name: busybox
       image: ikulyk404/busyboxplus:curl
-      command: ["sleep", "36"]
+      command: ["sleep", "3600"]

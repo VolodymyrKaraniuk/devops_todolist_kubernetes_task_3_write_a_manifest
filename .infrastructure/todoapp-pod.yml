@@ -9,15 +9,15 @@ spec:
       image: volodimirkaranuk7/todoapp:3.0.0
       ports:
         - containerPort: 8000
-#      livenessProbe:
-#        httpGet:
-#          path: /health
-#          port: 8000
-#        initialDelaySeconds: 60
-#        periodSeconds: 5
-#      readinessProbe:
-#        httpGet:
-#          path: /ready
-#          port: 8000
-#        initialDelaySeconds: 5
-#        periodSeconds: 5
+      livenessProbe:
+        httpGet:
+          path: /health
+          port: 8000
+        initialDelaySeconds: 60
+        periodSeconds: 5
+      readinessProbe:
+        httpGet:
+          path: /ready
+          port: 8000
+        initialDelaySeconds: 5
+        periodSeconds: 5
